@@ -11,5 +11,6 @@ package Interfaces;
  */
 public class Control {
     
+ String h= "Hola";
     
 }
