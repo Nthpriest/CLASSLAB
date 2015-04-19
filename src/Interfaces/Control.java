@@ -14,5 +14,5 @@ public class Control {
  String h= "Hola";
  String s= "Adios";
  String a= "Adios";
-    
+ String b= "hola"; 
 }
