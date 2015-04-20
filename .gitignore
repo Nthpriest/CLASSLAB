@@ -41,4 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+<<<<<<< HEAD
 /CLASSLAB_ObjetoNegocios/nbproject/private/
+=======
+/CLASSLAB_Persistencia/nbproject/private/
+>>>>>>> origin/master
