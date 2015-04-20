@@ -12,7 +12,7 @@ package Interfaces;
 public class Control {
     
  String h= "Hola";
- String s= "Adios";
+ String s= "Que tal?";
  String a= "Adios";
  String b= "hola"; 
 }
