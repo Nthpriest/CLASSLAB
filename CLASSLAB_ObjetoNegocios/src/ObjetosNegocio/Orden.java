@@ -19,6 +19,7 @@ public class Orden {
     public String Medico;
     public Date fecha;
     public boolean ayuno;
+    public String Folio;
 
     public Orden(List<Analisis> ListaAnalisis, Cliente cliente, String Medico, Date fecha, boolean ayuno) {
         this.ListaAnalisis = ListaAnalisis;

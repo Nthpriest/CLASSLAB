@@ -123,31 +123,31 @@ public class Persistencia {
     public Object buscaObjeto(String clave, String Operacion) {
         if (Operacion.matches("1")) {
             for (Analisis x : this.ListaAnalisis) {
-                if (x.Codigo.matches(clave)) {
+                if (x.IDAnalisis.matches(clave)) {
                     return x;
                 }
             }
             return null;
         }
         if (Operacion.matches("2")) {
-            for (Avion x : this.ListaAviones) {
-                if (x.Modelo.matches(clave)) {
+            for (Cliente x : this.ListaClientes) {
+                if (x.Folio.matches(clave)) {
                     return x;
                 }
             }
             return null;
         }
         if (Operacion.matches("3")) {
-            for (Programa x : this.ListaProgramas) {
-                if (x.Codigo.matches(clave)) {
+            for (Factor x : this.ListaFactores) {
+                if (x.Nombre.matches(clave)) {
                     return x;
                 }
             }
             return null;
         }
         if (Operacion.matches("4")) {
-            for (Vuelo x : this.ListaVuelos) {
-                if (x.NumeroVuelo.matches(clave)) {
+            for (Orden x : this.ListaOrdenes) {
+                if (x.Folio.matches(clave)) {
                     return x;
                 }
             }

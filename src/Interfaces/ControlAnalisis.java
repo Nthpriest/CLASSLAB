@@ -16,30 +16,33 @@ import java.util.logging.Logger;
  * @author ADRIAN
  */
 public class ControlAnalisis {
-    
-Persistencia persistencia;
+
+    Persistencia persistencia;
 
     public ControlAnalisis(Persistencia persistencia) {
         this.persistencia = persistencia;
     }
-    public void AgregarAnalisis(Analisis analisis){
-    try {
-        this.persistencia.Guardar(analisis, "1");
-    } catch (IOException ex) {
-        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (ClassNotFoundException ex) {
-        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+
+    public void AgregarAnalisis(Analisis analisis) {
+        try {
+            this.persistencia.Guardar(analisis, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
+
+    public void GuardarAnalisis(Analisis analisis) {
+        try {
+            this.persistencia.Guardar(analisis, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
-      public void GuardarAnalisis(Analisis analisis){
-    try {
-        this.persistencia.Guardar(analisis, "1");
-    } catch (IOException ex) {
-        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (ClassNotFoundException ex) {
-        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
-    }
-    }
+    
 
 }
