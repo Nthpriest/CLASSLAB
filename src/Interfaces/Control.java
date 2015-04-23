@@ -5,16 +5,13 @@
  */
 package Interfaces;
 
+import Persistencia.Persistencia;
+
 /**
  *
  * @author ADRIAN
  */
 public class Control {
     
- String h= "Hola";
- String s= "Que tal?";
- String a= "Adios";
- String b= "hola"; 
- String H= "ya pude ";
- String i= "Test";
+Persistencia persistencia;
 }
