@@ -11,7 +11,12 @@ import Persistencia.Persistencia;
  *
  * @author ADRIAN
  */
-public class Control {
+public class ControlAnalisis {
     
 Persistencia persistencia;
+
+    public ControlAnalisis(Persistencia persistencia) {
+        this.persistencia = persistencia;
+    }
+
 }
