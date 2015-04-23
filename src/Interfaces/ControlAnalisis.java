@@ -5,7 +5,11 @@
  */
 package Interfaces;
 
+import ObjetosNegocio.*;
 import Persistencia.Persistencia;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -17,6 +21,25 @@ Persistencia persistencia;
 
     public ControlAnalisis(Persistencia persistencia) {
         this.persistencia = persistencia;
+    }
+    public void AgregarAnalisis(Analisis analisis){
+    try {
+        this.persistencia.Guardar(analisis, "1");
+    } catch (IOException ex) {
+        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+    } catch (ClassNotFoundException ex) {
+        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+    }
+    }
+    
+      public void GuardarAnalisis(Analisis analisis){
+    try {
+        this.persistencia.Guardar(analisis, "1");
+    } catch (IOException ex) {
+        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+    } catch (ClassNotFoundException ex) {
+        Logger.getLogger(ControlAnalisis.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }
 
 }

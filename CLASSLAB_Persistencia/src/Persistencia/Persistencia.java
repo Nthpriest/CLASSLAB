@@ -120,43 +120,43 @@ public class Persistencia {
         }
     }
 
-//    public Object buscaObjeto(String clave, String Operacion) {
-//        if (Operacion.matches("1")) {
-//            for (Analisis x : this.ListaAnalisis) {
-//                if (x.Codigo.matches(clave)) {
-//                    return x;
-//                }
-//            }
-//            return null;
-//        }
-//        if (Operacion.matches("2")) {
-//            for (Avion x : this.ListaAviones) {
-//                if (x.Modelo.matches(clave)) {
-//                    return x;
-//                }
-//            }
-//            return null;
-//        }
-//        if (Operacion.matches("3")) {
-//            for (Programa x : this.ListaProgramas) {
-//                if (x.Codigo.matches(clave)) {
-//                    return x;
-//                }
-//            }
-//            return null;
-//        }
-//        if (Operacion.matches("4")) {
-//            for (Vuelo x : this.ListaVuelos) {
-//                if (x.NumeroVuelo.matches(clave)) {
-//                    return x;
-//                }
-//            }
-//            return null;
-//        } else {
-//            return null;
-//        }
-//
-//    }
+    public Object buscaObjeto(String clave, String Operacion) {
+        if (Operacion.matches("1")) {
+            for (Analisis x : this.ListaAnalisis) {
+                if (x.Codigo.matches(clave)) {
+                    return x;
+                }
+            }
+            return null;
+        }
+        if (Operacion.matches("2")) {
+            for (Avion x : this.ListaAviones) {
+                if (x.Modelo.matches(clave)) {
+                    return x;
+                }
+            }
+            return null;
+        }
+        if (Operacion.matches("3")) {
+            for (Programa x : this.ListaProgramas) {
+                if (x.Codigo.matches(clave)) {
+                    return x;
+                }
+            }
+            return null;
+        }
+        if (Operacion.matches("4")) {
+            for (Vuelo x : this.ListaVuelos) {
+                if (x.NumeroVuelo.matches(clave)) {
+                    return x;
+                }
+            }
+            return null;
+        } else {
+            return null;
+        }
+
+    }
     public void remplazaObjeto(Object Objeto, Object nuevo, String Operacion) {
         if (Operacion.matches("1")) {
             int pos = this.ListaAnalisis.indexOf(Objeto);

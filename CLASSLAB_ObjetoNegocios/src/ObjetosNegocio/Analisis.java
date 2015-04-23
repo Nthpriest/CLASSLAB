@@ -15,10 +15,12 @@ public class Analisis {
 
     public TipoAnalisis tipoAnalisis;
     public List<Resultado> factoresResultado;
+    public String IDAnalisis;
 
-    public Analisis(TipoAnalisis tipoAnalisis, List<Resultado> factoresResultado) {
+    public Analisis(TipoAnalisis tipoAnalisis, List<Resultado> factoresResultado, String IDAnalisis) {
         this.tipoAnalisis = tipoAnalisis;
         this.factoresResultado = factoresResultado;
+        this.IDAnalisis = IDAnalisis;
     }
 
     public Analisis() {
