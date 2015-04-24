@@ -224,19 +224,19 @@ public class Persistencia {
                 Factor cuenta = (Factor) file.readObject();
                 ListaProvisional3.add(cuenta);
             }
-//            this.ListaProgramas = ListaProvisional3;
-//            System.out.println("Lista Programas Cargada");
-//        }
-//        if (DataVuelos.listFiles() != null) {
-//            this.ListaDataVuelos = DataVuelos.listFiles();
-//            List<Vuelo> ListaProvisional4 = new ArrayList<>();
-//            for (int i = 0; i < ListaDataVuelos.length; i++) {
-//                ObjectInputStream file = new ObjectInputStream(new FileInputStream(ListaDataVuelos[i]));
-//                Vuelo cuenta = (Vuelo) file.readObject();
-//                ListaProvisional4.add(cuenta);
-//            }
-//            this.ListaVuelos = ListaProvisional4;
-//            System.out.println("Lista Vuelos Cargada");
+            this.ListaFactores = ListaProvisional3;
+            System.out.println("Lista Factores Cargada");
+        }
+        if (DataOrdenes.listFiles() != null) {
+            this.ListaDataOrdenes = DataOrdenes.listFiles();
+            List<Orden> ListaProvisional4 = new ArrayList<>();
+            for (int i = 0; i < ListaDataOrdenes.length; i++) {
+                ObjectInputStream file = new ObjectInputStream(new FileInputStream(ListaDataOrdenes[i]));
+                Orden cuenta = (Orden) file.readObject();
+                ListaProvisional4.add(cuenta);
+            }
+            this.ListaOrdenes = ListaProvisional4;
+            System.out.println("Lista Ordenes Cargada");
         }
 
     }
