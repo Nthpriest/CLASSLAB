@@ -1,0 +1,37 @@
+public class ControlFactor {
+
+    Persistencia persistencia;
+
+    public ControlFactor(Persistencia persistencia) {
+        this.persistencia = persistencia;
+    }
+
+    public void AgregarFactor(Factor factor) {
+        try {
+            this.persistencia.Guardar(factor, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlFactor.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlFactor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void GuardarFactor(Factor factor) {
+        try {
+            this.persistencia.Guardar(factor, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlFactor.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlFactor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void BuscaFactor(Factor factor){
+        this.persistencia.buscaObjeto(factor.IDFactor, "1");
+    }
+    
+    public void Eliminar(Factor factor){
+        this.persistencia.buscaObjeto(factor.IDFactor, "1");
+    }
+
+}
