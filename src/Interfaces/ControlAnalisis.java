@@ -43,6 +43,12 @@ public class ControlAnalisis {
         }
     }
     
+    public void BuscarAnalsis(Analisis analisis){
+        this.persistencia.buscaObjeto(analisis.IDAnalisis, "1");
+    }
     
+    public void Eliminar(Analisis analisis){
+        this.persistencia.buscaObjeto(analisis.IDAnalisis, "1");
+    }
 
 }
