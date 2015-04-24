@@ -1,0 +1,37 @@
+public class ControlCliente {
+
+    Persistencia persistencia;
+
+    public ControlCliente(Persistencia persistencia) {
+        this.persistencia = persistencia;
+    }
+
+    public void AgregarCliente(Cliente cliente) {
+        try {
+            this.persistencia.Guardar(cliente, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlCliente.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlCliente.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void GuardarCliente(Cliente cliente) {
+        try {
+            this.persistencia.Guardar(cliente, "1");
+        } catch (IOException ex) {
+            Logger.getLogger(ControlCliente.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ControlCliente.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void BuscaCliente(Cliente cliente){
+        this.persistencia.buscaObjeto(cliente.IDCliente, "1");
+    }
+    
+    public void Eliminar(Cliente cliente){
+        this.persistencia.buscaObjeto(cliente.IDCliente, "1");
+    }
+
+}
